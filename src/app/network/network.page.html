@@ -1,0 +1,27 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title >Network</ion-title>
+    
+    <ion-button slot="start" >
+      <!-- <ion-icon
+      style="color: #fff; font-size: 20px;"
+      slot="icon-only"
+      ios="arrow-back-outline"
+      md="arrow-back-outline"
+    ></ion-icon> -->
+    <ion-back-button defaultHref="/home">
+
+    </ion-back-button>
+  </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar >
+      <ion-title size="large" class="ion-text-center">Network</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <!-- {{ status.connected ? 'Device Online' : 'Device Offline'}} -->
+  {{ status}}
+</ion-content>

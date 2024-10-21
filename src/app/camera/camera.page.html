@@ -1,0 +1,34 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title >Camera</ion-title>
+    
+    <ion-button slot="start" >
+   
+    <ion-back-button defaultHref="/home">
+
+    </ion-back-button>
+  </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-button expand="block" (click)="clickPhoto()">
+   Click Photo
+  </ion-button>
+
+  <img [src]="selectImg" *ngIf="selectImg" alt="">
+</ion-content>
+
+
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-button expand="block" *ngIf="!isPlatformWeb()" (click)="clickPhoto()">
+    Click Photo
+  </ion-button> -->
+
+  <!-- File input for web platforms -->
+  <!-- <input type="file" accept="image/*" *ngIf="isPlatformWeb()" (change)="handleFileInput($event)">
+  
+  <img [src]="selectImg" *ngIf="selectImg" alt="Selected Image">
+</ion-content> -->
